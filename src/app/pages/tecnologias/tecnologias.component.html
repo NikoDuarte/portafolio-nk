@@ -1,0 +1,65 @@
+<div class="container animate__animated animate__fadeIn">
+    <div class="row justify-content-center my-4">
+        <div class="col-md-12 text-center">
+            <p>
+                He implementado soluciones tecnológicas desarrolladas apartir de aplicativos web fullstack basado en frontend, backend, microservicios, motor de bases de datos y implementación de soluciones en la cloud con Iaas y Paas.
+            </p>
+        </div>
+        <div class="col-md-6 text-center border-right my-4">
+            <h2>
+                <strong>Front</strong>
+            </h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-6" *ngFor="let item_front of tecnologias.front" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img [src]="item_front.img" [alt]="item_front.name" class="img-fluid w-50 h-50">
+                    <p>
+                        {{ item_front.exp }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 text-center my-4">
+            <h2>
+                <strong>Back</strong>
+            </h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-6" *ngFor="let item_back of tecnologias.back" data-aos="fade-up"
+                data-aos-duration="3000">
+                    <img [src]="item_back.img" [alt]="item_back.name" class="img-fluid w-50 h-50">
+                    <p>
+                        {{ item_back.exp }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-md-12 align-self-center text-center">
+            <h2>
+                <strong>Bases de datos</strong>
+            </h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4" *ngFor="let item_dbms of tecnologias.dbms" data-aos="zoom-in-up">
+                    <img [src]="item_dbms.img" [alt]="item_dbms.name" class="img-fluid w-50 h-50">
+                    <p>
+                        {{ item_dbms.exp }}
+                    </p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="col-md-12 align-self-center text-center mb-4">
+            <h2>
+                <strong>Cloud</strong>
+            </h2>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4" *ngFor="let item_cloud of tecnologias.cloud" data-aos="zoom-in-up">
+                    <img [src]="item_cloud.img" [alt]="item_cloud.name" class="img-fluid w-25 h-25">
+                    <p>
+                        {{ item_cloud.exp }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

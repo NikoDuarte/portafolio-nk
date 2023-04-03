@@ -1,1 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+$primary-color: #0591F7;
+$secondary-color: #434343;
+$light-color: #ffffff;
+
+$primary: $primary-color;
+$secondary: $secondary-color;
+$light: $light-color
